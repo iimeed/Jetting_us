@@ -1,0 +1,658 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jetting</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
+    
+</head>
+<body>
+    
+    
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "images/shopping-bag-icon.png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2">Jetting</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                
+                
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#header">home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#collection"> products</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#special">Minecraft</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#about">about us</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#popular">GIFT CARDS AND KEYS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
+        <div class = "container h-100 d-flex align-items-center carousel-inner">
+            <div class = "text-center carousel-item active">
+                <h2 class = "text-capitalize text-white">best collection</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">new arrivals</h1>
+                <a href = "#" class = "btn mt-3 text-uppercase">shop now</a>
+            </div>
+            <div class = "text-center carousel-item">
+                <h2 class = "text-capitalize text-white">best price & offer</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">new Web site</h1>
+                <a href = "#" class = "btn mt-3 text-uppercase">buy now</a>
+            </div>
+        </div>
+
+        <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
+            <span class = "carousel-control-prev-icon"></span>
+        </button>
+        <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
+            <span class = "carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- end of header -->
+
+    <!-- collection -->
+    <section id = "collection" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center">
+                <h2 class = "position-relative d-inline-block">New </h2>
+            </div>
+
+            <div class = "row g-0">
+                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Netflix</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">spotify</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">VPN</button>
+                    
+                </div>
+
+                <div class = "collection-list mt-4 row gx-0 gy-3">
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/unnamed-removebg-preview.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Netflix 1 month </p>
+                            
+                            <button class = "button1"data-sellix-product="64fdc9a0f31ff"type="submit">$ 3.99</button>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/174872-removebg-preview.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Spotify 1 month</p>
+                            <button class = "button1"data-sellix-product="64fdcaae7c4bc" type="submit"alt="Buy Now with sellix.io">$ 2.99</button>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/main.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Nord VPN</p>
+                            <button class = "button1"data-sellix-product="64fdce839f009"type="submit"alt="Buy Now with sellix.io">$ 3.99</button>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/unnamed-removebg-preview.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Netflix 6 months</p>
+                            <button class = "button1"data-sellix-product="64fdc9ea10307"type="submit"alt="Buy Now with sellix.io">$ 6.50</button>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/174872-removebg-preview.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Spotify 3 Month</p>
+                            <button class = "button1"data-sellix-product="64fdcaf1370d9"type="submit">$ 5.99</button>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/Capture-removebg-preview.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">express VPN</p>
+                            <button class = "button1"data-sellix-product="64fde75541fa2"type="submit"alt="Buy Now with sellix.io">$ 5.99</button>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/unnamed-removebg-preview.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Netflix 1 year </p>
+                            <button class = "button1"data-sellix-product="64fdca3298f4e"type="submit"alt="Buy Now with sellix.io">$15.99</button>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/174872-removebg-preview.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Spotify x100</p>
+                            <button class = "button1"data-sellix-product="64fdcaf142f51"type="submit"alt="Buy Now with sellix.io">$ 100</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of collection -->
+
+    <!-- special products -->
+    <section id = "special" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Special Selection</h2>
+            </div>
+
+            <div class = "special-list row g-0">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/PNé.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Mail Full Access</p>
+                        <span class = "fw-bold d-block">$9</span>
+                        <a  class = "btn btn-primary mt-3"data-sellix-product="64fde9cc427a1"type="submit"alt="Buy Now with sellix.io">ORDER NOW </a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/OP CAPE.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Optifine Cape</p>
+                        <span class = "fw-bold d-block">$ 5.99</span>
+                        <a  class = "btn btn-primary mt-3"data-sellix-product="64fde8fb92154"type="submit"alt="Buy Now with sellix.io">ORDER NOW</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/pngwing.com.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Hypixel Leveled 25+</p>
+                        <span class = "fw-bold d-block">$ 1.50</span>
+                        <a  class = "btn btn-primary mt-3"data-sellix-product="64fdea4e72c76"type="submit"alt="Buy Now with sellix.io">ORDER NOW</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/pngwing.com (1).png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Hypixel Ranked</p>
+                        <span class = "fw-bold d-block">$ 1.90</span>
+                        <a  class = "btn btn-primary mt-3"data-sellix-product="64fe282da3b7d"type="submit"alt="Buy Now with sellix.io">ORDER NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- special products -->
+    <section id = "special" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block"> MORE</h2>
+            </div>
+
+            <div class = "special-list row g-0">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/Daim.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Semi Full Access</p>
+                        <span class = "fw-bold d-block">$0.10</span>
+                        <a  class = "btn btn-primary mt-3"data-sellix-product="64fe282db8a8a"type="submit"alt="Buy Now with sellix.io">ORDER NOW </a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/Daim.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Non Full Acceses</p>
+                        <span class = "fw-bold d-block">$ 0.04</span>
+                        <a  class = "btn btn-primary mt-3"data-sellix-product="64fe291e0eb13"type="submit"alt="Buy Now with sellix.io">ORDER NOW</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/Daim.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Hypixel Unbanned</p>
+                        <span class = "fw-bold d-block">$ 0.05</span>
+                        <a  class = "btn btn-primary mt-3"data-sellix-product="64ff4a48c643e"type="submit"alt="Buy Now with sellix.io">ORDER NOW</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/Daim.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Hypixel Leveled 10+</p>
+                        <span class = "fw-bold d-block">$ 0.15</span>
+                        <a  class = "btn btn-primary mt-3"data-sellix-product="64ff4abe0a6a7"type="submit">ORDER NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+
+    
+
+    
+
+    <!-- about us -->
+    <section id = "about" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block ms-4">WHY US</h2>
+                    </div>
+                    <p class = "lead text-muted">100% Trusted</p>
+                    <p>Easy to contact. Online 24/7 for Sales & Friendly Support
+Accounts are never Shared or Resold.
+You receive accounts immediately after payment. Never having to wait.
+Discounts are included if you purchase 2x accounts or more or on holidays!
+Special discounts are available for returning customers.
+Full Warranty Support/Replace.
+All accounts are from HQ Databases, Clean Residentials, Latest AntiLock API.. Contact us for paypal<a class="telegam" href="https://t.me/TheMeed" target="_blank"><i class="bi bi-telegram"></i></a>
+    
+
+    
+</p>
+
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src = "images/Untitled-2.png" alt = "" class = "img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+
+    <!-- popular -->
+    <section id = "popular" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Gaming Gift Cards</h2>
+            </div>
+
+            <div class = "row">
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">DoorDash</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/doordash.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">DoorDash 100$ ACCOUNT USA</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="650ec76ab0b11"type="submit">$30.00</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/doordash.png " alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">DoorDash 150$ ACCOUNT USA</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="650ec86c3a3af"type="submit"alt="Buy Now with sellix.io">$50.00</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/doordash.png " alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">DoorDash 200$ ACCOUNT USA</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="650ec8a35bb10"type="submit"alt="Buy Now with sellix.io">$80.00</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Starbucks</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/STARBUKS.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Gift Card 15 USD - UNITED STATES</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="650eca1ac3520"type="submit"alt="Buy Now with sellix.io">$13.00</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/starbuks.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Gift Card 25 USD - UNITED STATES</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="650ecb37261fa"type="submit"alt="Buy Now with sellix.io">$22.00</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/STARBUKS.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Gift Card 50 USD - UNITED STATES</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="650ecb9503d8e"type="submit"alt="Buy Now with sellix.io">$45.00</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">AMAZON</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/amazon.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Amazon Gift Card 10 USD - Key UNITED STATES</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="650eccba2c70d"type="submit"alt="Buy Now with sellix.io">$11.00</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/amazon.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Amazon Gift Card 50 USD - Key UNITED STATES</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="650ecda1e864a"type="submit"alt="Buy Now with sellix.io">$51.99</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/amazon.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Amazon Gift Card 100 USD - Key UNITED STATES</p>
+                            <a class = "btn btn-primary mt-3"data-sellix-product="650ece1849d2a""type="submit"alt="Buy Now with sellix.io">$101.00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of popular -->
+    <!-- popular22 -->
+    <section id = "popular" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">OTHER</h2>
+            </div>
+
+            <div class = "row">
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">SOMTHING YOU MIGHT LIKE</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/ONLYFANS.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">ONLYFANS</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-group="64a9ae055c4db"type="submit"alt="Buy Now with sellix.io">$1.00</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/download.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Linkedin Yearly Upgrade</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="64a9aed6f3e73"type="submit"alt="Buy Now with sellix.io">$14.99</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/Office.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Office 2019 Home and business email bind (windows / mac)</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="650f2404e2a8e""type="submit"alt="Buy Now with sellix.io">$80.00</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">APPLE</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/tfaha.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">iTunes gift card 10 USD</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="65104e3aecb9a"type="submit"alt="Buy Now with sellix.io">$9.82</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/tfaha.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">iTunes gift card 25 USD</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="65104f771c334"type="submit"alt="Buy Now with sellix.io">$23.90</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/tfaha.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">iTunes gift card 100 USD</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="65104fb1cd3f5"type="submit"alt="Buy Now with sellix.io">$99.00</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">ADOBE</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/ADD.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Creative Cloud All Apps 1 MONTH</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="6510468ca7545"type="submit"alt="Buy Now with sellix.io">$7.00</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/ADD.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Creative Cloud All Apps 3 MONTHS</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="65104700c208a"type="submit"alt="Buy Now with sellix.io">$16.00</a>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/ADD.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Creative Cloud All Apps 1 YEAR</p>
+                            <a  class = "btn btn-primary mt-3"data-sellix-product="6510472e1214a"type="submit"alt="Buy Now with sellix.io">$40.00</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    <!-- end of popular2 -->
+    
+
+  
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                
+                 </div>
+                
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <div class="social-links">
+                        <a class="telegam" href="https://t.me/TheMeed" target="_blank"><i class="bi bi-telegram"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    
+                    <p class = "text-white text-muted mt-3">&#169; Meed. All rigths reserved</p>
+                    
+                    
+                </div>
+                
+
+                
+    </footer>
+
+    <!-- end of footer -->
+    
+
+
+
+
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
+</body>
+</html>
